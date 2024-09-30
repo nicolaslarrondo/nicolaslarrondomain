@@ -1,10 +1,20 @@
 
 
+    function mensaje(){
+      alert("this page says \n \n Ninja was liked")
+    }
 
-
-    function eliminar() {
-        const elemento = document.getElementById("elemento-ocultar");
-        elemento.remove(); // Añade la clase para ocultarlo
-        alert("this page says nija was liked")
+    function eliminar(elemento) {
+          
+        elemento.remove(); 
         
+    }
+
+    function login(elemento){
+       if (elemento.innerText  == "Login")  {
+           elemento.innerText  = "Loooogin";
+       }else{
+        elemento.innerText  = "Login"
+       }
+
     }

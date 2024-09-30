@@ -2,36 +2,50 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dojonary</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <title>Document</title>
 </head>
 <body>
-    <div class="buscador">
-     <h1 class=" buscador_titulo" >dojonary</h1>
-     <input class="buscador_texto" type="text" placeholder="seach">
-     <button onclick="eliminar()" class="buscador_boton">boton</button>
+    <div class="container">
+        <div class="top">
+            <h1 class="title">Dojonary</h1>
+            <input type="text" name="search" placeholder="Search" class="search">
+            <button class="btn login" onclick="login(this)">Login</button>
+        </div>
+        <div class="row">
+            <div class="flex-2">
+                <div class="box definition">
+                    <div class="left">
+                        <h1>ninja</h1>
+                        <p><em>noun</em></p>
+                        <p>Plural: <em>ninjas</em></p>
+                        <button class="btn like" onclick="mensaje()">13 likes</button>
+                    </div>
+                    <p class="definition-text">A practitioner skilled in the <a href="#">Japanese</a> art of <a href="#">ninjutsu</a></p>
+                </div>
+                <div class="box definition">
+                    <div class="left">
+                        <h1>ninja</h1>
+                        <p><em>noun</em></p>
+                        <p>Plural: <em>ninjas</em></p>
+                        <button class="btn like" onclick="mensaje()">37 likes</button>
+                    </div>
+                    <p class="definition-text">A <a href="#">programmer</a> who breaks down problems with <a href="#">zen</a>-like focus</p>
+                </div>
+            </div>
+            <div class="flex-1">
+                <div class="box">
+                    <h2>Dojonary is defined by YOU</h2>
+                    <button id="elemento_ocultar"class="btn add" onclick="eliminar(this)">Add Definition</button>
+                </div>
+            </div>
+        </div>
     </div>
-
-    <div class="nija_1">
-     <h1 class="nija_titulo_1">nija</h2>
-     <p class="nija_texto_a_1">noun <br> pluto nija</p>
-     <P class="nija_texto_b_1">a practica skilied in the japones art </P>
-     <button onclick="eliminar()" class="nija_botton_1" >13 like</button>
-    </div>
-
-    <div class="nija_2">
-        <h1 class="nija_titulo_1">nija</h2>
-        <p class="nija_texto_a_1">noun <br> pluto nija</p>
-        <P class="nija_texto_b_1">a practica skilied in the japones art </P>
-        <button onclick="eliminar()" class="nija_botton_1" >37 like</button>
-    </div>
-
-    <div class="add">
-    <h3 class="add_1">dojonary is defined by you</h3>
-    <button id="elemento-ocultar"onclick="eliminar()" class="add_2">add defined</button>
-    </div>
-
-<script src="javascitp.js"></script>
+    <script src="javascitp.js"></script>
 </body>
 </html>
